@@ -1,0 +1,124 @@
+*,
+::before,
+::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #e8e7e7;
+	font-family: Arial, Helvetica, sans-serif;
+	color: black;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+h1 {
+	text-align: center;
+	padding: 5px;
+}
+
+.message-box {
+	background-color: grey;
+	justify-content: center;
+}
+
+h3 {
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+
+.tapis-box {
+	padding: 30px;
+	background-color: green;
+	border-radius: 30px;
+	margin: 20px;
+	/* Ajout de marge pour l'espace entre le tapis et les autres éléments */
+}
+
+#banque,
+#joueur {
+	padding: 10px;
+	text-align: center;
+}
+
+img {
+	/* border-radius: 10px; */
+	/* border: 1px solid black; */
+	/* Ajoute un arrondi de 10 pixels aux coins de l'image */
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+	/* Ajoute une ombre à l'image */
+}
+
+.boutons-box {
+	margin: 80px auto;
+	text-align: center;
+	width: 100%;
+	position: relative;
+}
+
+button {
+	background-color: blue;
+	border-radius: 10px;
+	border: 4px double #4d03d6;
+	color: black;
+	text-align: center;
+	font-size: 28px;
+	padding: 20px;
+	width: 200px;
+	transition: all 0.5s;
+	cursor: pointer;
+	margin: 5px;
+}
+
+button:hover {
+	background-color: #b414ba;
+}
+
+
+
+.stat-box {
+	background-color: aqua;
+	padding: 20px;
+	margin: 20px;
+	/* Ajout de marge pour l'espace autour de la zone de statistiques */
+	display: grid;
+	grid-template-rows: repeat(4, 1fr);
+	/* Pour afficher les statistiques en trois colonnes */
+	grid-gap: 10px;
+	/* Espacement entre les éléments dans la grille */
+}
+
+.statistiques {
+	background-color: pink;
+}
+
+/* Media Queries pour les écrans de taille moyenne */
+/* @media screen and (max-width: 768px) {
+	.tapis-box {
+		padding: 20px;
+	}
+
+	#banque,
+	#joueur {
+		padding: 20px;
+	}
+} */
+
+/* Media Queries pour les écrans de petite taille */
+/* @media screen and (max-width: 480px) {
+	.tapis-box {
+		padding: 10px;
+	}
+
+	#banque,
+	#joueur {
+		padding: 10px;
+	}
+} */

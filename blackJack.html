@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <title>BlackJack</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>BlackJack</h1>
+    <div class="container">
+      <div class="infos">
+        <h2  id="manche"></h2>
+        <button class="nouvelle-partie" type="submit" onClick="nouvellePartie()">
+            Nouvelle Partie
+        </button>
+        <div class="stat-box">
+          <div class="statistiques"></div>
+          <div id="win"></div>
+          <div id="blackjack"></div>
+          <div id="lost"></div>
+        </div>
+      </div> 
+      <div class="tapis-box">
+        <h3>Les cartes de la banque</h3>
+        <div id="banque"></div>
+        <h3>Vos cartes</h3>
+        <div id="joueur"></div>
+      </div>
+      <div class="message-box">
+        <div id="messageScoreBanque"></div>
+        <div id="messageScoreJoueur"></div>
+        <div class="boutons-box">
+          <button id="carte" type="submit" onClick="ajoutCarteJoueur()">
+            Carte
+          </button>
+          <button id="reste" type="submit" onClick="reste()">Reste</button>
+          <button id="continuer" type="submit" onClick="continuer()" style="display: none">
+            Continuer à jouer
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
