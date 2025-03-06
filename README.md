@@ -1,2 +1,3 @@
-# blackJack
-Blackjack game
+# Blackjack game
+
+Projet javascript de BTS
