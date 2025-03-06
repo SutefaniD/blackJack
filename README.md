@@ -1,3 +1,3 @@
-# Blackjack game
+# Jeu de Blackjack
 
 Projet javascript de BTS
